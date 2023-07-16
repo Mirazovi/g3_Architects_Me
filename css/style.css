@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+header{
+    background-color: #fff4e6;
+    padding: 50px 240px;
+}
+nav{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+nav >ul{
+    display: flex;
+    gap: 30px;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+}
+.nav-container{
+    font-size: 3rem;
+    font-weight: 700;
+}
+    /* banner part  */
+ .banner-contant{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #131313;
+}
+.banner-description{
+    font-size: 1.15rem;
+    font-weight: 400;
+    padding: 20px 0;
+    color: #727280;
+}
+.banner img{
+  width: 100%;
+  margin-top: 20px;
+
+}
+.btn-primary{
+    background-color: #ff900e;
+    border: none;
+    border-radius: 8px;
+    color: #FFF;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}     
+ main{
+    max-width: 1440px;
+    margin: 50px auto;
+ }
+   /* team part  */
+   .team-container{
+    display: flex;
+    align-items: center;
+   }
+.team-contant{
+    padding: 0 20px;
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.team-title{
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+.Quick{
+    color: #727280;
+}
+.Features{
+    color: #ff900e;
+}
+.team-description{
+    color: #727280;
+    padding: 20px 0;
+    font-weight: 400;
+}
+      /* about part  */
+.about-container{
+    display: flex;
+    margin: 100px 0;
+}
+.about-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #131313;
+    border-left: 5px solid #ff900e;
+    padding-left: 20px;
+}
+.about-contant{
+    padding-right: 100px;
+}
+.about-box{
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 40px 0 rgba(0, 0, 0, 0.6);
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+.about-box h3{
+    font-size: 1.5rem;
+    padding: 20px 0;
+}
+.about-box p{
+    color: #727280;
+    font-weight: 400;
+}
+.about-description{
+    margin-bottom: 40px;
+    font-weight: 400;
+    color: #727280;
+    padding-top: 20px;
+}
+.ten-years-bedge{
+    font-size: 3rem;
+    background-color: #ff900e;
+    color: #FFF;
+    padding: 30px 50px;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    bottom: 60px;
+}
+.about-container img{
+    margin-left: 50px;
+}
+    /* survices part  */
+.survices-head{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 50px;
+}
+.survices-para{
+    color: #727280;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.survices-box{
+    padding: 40px 50px;
+    border: 2px solid #ff900e;
+    border-radius: 8px;
+    text-align: center;
+}
+.survices-box h1{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.survices-box p{
+    font-weight: 400;
+    color: #727280;
+    padding: 10px 0;
+}
+.survices-box-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+}
+     /* sponser part  */
+    .sponser-icon{
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        align-items: center; 
+    }
+    .sponser-icon img{
+        width: 165px;
+    }
+        /* footer part  */
+    footer{
+        background-color: #ff900e;
+    }
+    .footer-para{
+        text-align: center;
+        font-size: 2rem;
+        padding: 20px 0;
+    }
+     /* responsive part  */
+     @media screen and (max-width:576px) {
+        header{
+            padding: 20px;
+        }
+        nav,
+        .team-container,
+        .about-container,
+        .survices-box-container,
+        .sponser-icon
+        {
+            flex-direction: column;
+        }
+        .team-img{
+            grid-template-columns: 1fr;
+         }
+         .about-container img{
+            width: 100%;
+            margin-left: 0;
+         }
+         .about-contant{
+            padding: 20px;
+         }
+         .ten-years-bedge{
+            font-size: 2rem;
+         }
+     }
+     @media screen and (min-width:577px) and (max-width:992px) {
+         nav,
+         .team-container,
+         .about-container,
+         .survices-box-container,
+         .sponser-icon
+         {
+            flex-direction: column;
+         }
+         header{
+            padding: 50px;
+         }
+         .about-contant{
+            padding: 20px;
+         }
+         .about-container img{
+            width: 100%;
+            margin-left: 0;
+         }
+         
+     }
